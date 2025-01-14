@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Task Manager</h1>
+
+    <!-- Add Task Section -->
+    <div id="add-task">
+        <input type="text" id="task-title" placeholder="Task Title" required>
+        <input type="text" id="task-description" placeholder="Task Description" required>
+        <button id="add-task-button">Add Task</button>
+    </div>
+
+    <hr>
+
+    <!-- Task List Section -->
+    <div id="task-list">
+        <h2>Tasks</h2>
+        <ul id="tasks-container"></ul>
+    </div>
+</div>
+
+<!-- Edit Task Modal -->
+<div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Edit Task</h2>
+        <input type="text" id="edit-task-title" placeholder="Task Title" required>
+        <input type="text" id="edit-task-description" placeholder="Task Description" required>
+        <button id="save-task-button">Save Changes</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
